@@ -1,98 +1,260 @@
-body {
-    background-color: black;
-    background-repeat: no-repeat;
-    font-family: "Montserrat", sans-serif;
-    color: white;
-}
+    body {
+        background-color: black;
+        background-repeat: no-repeat;
+        font-family: "Montserrat", sans-serif;
+        color: white;
+        overflow-x:hidden;
+        overflow-y:hidden;
+    }
 
-#navbar {
-    overflow: hidden;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    margin-top: 10px;
-}
-  
-a {
-    display: block;
-    padding: 8px;
-    background-color: transparent;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    position: relative;
-    margin: 0.75%;
-    margin-right: 50px;
-    font-size: 14px;
-}
+    #navbar {
+        overflow: hidden;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        margin-top: 10px;
+    }
+    
+    .navbar {
+        display: block;
+        padding: 8px;
+        background-color: transparent;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        position: relative;
+        margin: 0.75%;
+        margin-right: 50px;
+        font-size: 14px;
+        border-color: none;
+    }
 
-a:hover {
-    color: #b194d7;
-}
+    .navbar:hover {
+        color: #b194d7;
+    }
 
-#home {
-    margin-top: 30px;
-    margin-left: 30px;
-    margin-right: 30px;
-}
+    .navbar.selected {
+        color: #b194d7;
+    }
+    
+    #navbar .ui-selected { background: none; color: #b194d7; }
 
-.display-shalom {
-    margin-top: 0px;
-    position: absolute;
-    font-size: 27px;
-    text-align: left;
-    font-style: italic;
-}
+    .tab-content {
+        background-color: transparent;
+        border-top: none;
+    }
 
-.display-name {
-    color: #b194d7;
-    margin-left: 120px;
-    font-size: 27px;
-    position:absolute;
-    font-weight: bold;
-}
+    /* #home {
+        margin-top: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+    } */
 
-.left-home {
-    margin-top: 20px;
-    margin-left: 30px;
-    margin-right: 30px;
-}
+    .display-shalom {
+        margin-top: 0px;
+        position: absolute;
+        font-size: 35px;
+        text-align: left;
+        font-style: italic;
+    }
 
-.display-news {
-}
+    .display-name {
+        color: #b194d7;
+        margin-left: 160px;
+        font-size: 36px;
+        position:absolute;
+        font-weight: bold;
+    }
 
-.news-bg {
-    display: block;
-    margin-right: auto;
-    width:700px;
-    position: absolute;
-}
+    .home-center {
+        width: 95%;
+        height: 85%;
+        margin: auto;
+        margin-top: 25px;
+        /* margin-left: 30px;
+        margin-right: 30px; */
+        margin-bottom: 30px;
+        background-color: transparent;
+        display: block;
+    }
 
-/* .right-home {
-    margin-top: 80px;
-    margin-right: 30px;
-} */
+    .news-display {
+        position: absolute;
+        width: 50%;
+        height: 35%;
+        margin-top: 60px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        background-color: transparent;
+        border-radius: 15px;
+    }
 
-/* .display-to-do-list {
-    margin-left: 978px;
-    margin-top: 303px;
-    margin-right: 107px;
-    margin-bottom: 472px;
-} */
+    .news-img {
+        position: absolute;
+        border-radius: 15px;
+        /* margin-top: -60px; */
+        width: 100%;
+        height: 100%;
+    }
 
-.to-do-list-bg {
-    margin-left: 736px;
-    margin-top: 267px;
-    margin-right: 50px;
-    margin-bottom: 446px;
-}
+    .curhat-dong-display {
+        position: absolute;
+        width: 15%;
+        height: 36.7%;
+        margin-top: 360px;
+        background-color: black;
+        border-radius: 15px;
+    }
 
-.display-nyatet-dong {
-    margin-left: 700px;
-}
+    .curhat-kana-daftar-dong-font {
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 15px;
+        text-align: left;
+        font-size: xx-large;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+    }
 
-.nyatet-dong-bg {
-    display: block;
-    margin-left: auto;
-    width:525px;
-}
+    .bubble-chat-display {
+        position: absolute;
+        margin-left: -80px;
+        margin-top: 90px;
+        z-index: 10;
+    }
+
+    .kana-dong-display{
+        position: absolute;
+        width: 16%;
+        height: 36.7%;
+        margin-top: 360px;
+        margin-left: 236px;
+        background-color: black;
+        border-radius: 15px;
+    }
+
+    .kana-img-display {
+        position: absolute;
+        margin-left: 1px;
+        margin-top: 75px;
+        opacity: 15%;
+    }
+
+    .daftar-dong-display {
+        position: absolute;
+        width: 15%;
+        height: 36.7%;
+        margin-top: 360px;
+        margin-left: 487px;
+        background-color: black;
+        border-radius: 15px;
+    }
+
+    .daftar-img-display {
+        position: absolute;
+        opacity: 15%;
+        margin-top: 115px;
+        margin-left: 25px;
+        margin-right: auto;
+    }
+
+    .shadow-display {
+        margin-top: 15px;
+        border-radius: 15px;
+        height: 270px;
+    }
+
+    .to-do-list-display {
+        position: absolute;
+        width: 41.8%;
+        height: 35%;
+        margin-top: 60px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        margin-left: 725px;
+        background-color: #5e17eb;
+        border-radius: 15px;
+    }
+
+    .to-do-list-img-display {
+        position: absolute;
+        z-index: 20;
+    }
+
+    .to-do-list-font {
+        position: absolute;
+        font-style: italic;
+        margin-left: 15px;
+        z-index: 20;
+    }
+
+    .view-list-font {
+        position: absolute;
+        margin-top: 230px;
+        margin-left: 320px;
+        z-index: 20;
+        color: white;
+        font-size: large;
+        font-style: italic;
+        text-decoration: none;
+    }
+
+    .add-new-font {
+        position: absolute;
+        margin-top: 230px;
+        margin-left: 470px;
+        z-index: 20;
+        color: white;
+        font-size: large;
+        font-weight: bold;
+        font-style: italic;
+        text-decoration: none;
+    }
+
+    .view-list-font-nyatet-dong {
+        position: absolute;
+        margin-top: 245px;
+        margin-left: 320px;
+        z-index: 50;
+        color: black;
+        font-size: large;
+        font-style: italic;
+        text-decoration: none;
+    }
+
+    .add-new-font-nyatet-dong {
+        position: absolute;
+        margin-top: 245px;
+        margin-left: 470px;
+        z-index: 100;
+        color: black;
+        font-size: large;
+        font-weight: bold;
+        font-style: italic;
+        text-decoration: none;
+    }
+
+    .nyatet-dong-display {
+        position: absolute;
+        width: 41.8%;
+        height: 36.7%;
+        margin-top: 360px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        margin-left: 725px;
+        background-color: white;
+        border-radius: 15px;
+    }
+
+    .nyatet-dong-img-display {
+        position: absolute;
+    }
+
+    .nyatet-dong-font {
+        position: absolute;
+        font-style: italic;
+        color: black;
+        margin-left: 15px;
+        z-index: 30;
+    }

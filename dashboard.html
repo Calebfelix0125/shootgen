@@ -7,40 +7,64 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
-    
-    <div id="navbar">
-
-        <a href="#home">HOME</a>
-        <a href="#news">NEWS</a>
-        <a href="#about-us">ABOUT US</a>
-        <a href="#team">TEAM</a>
-        <a href="#profile">PROFILE</a>
-
-    </div>
-
     <div id="home">
-        <p class="display-shalom">Shalom,<div class="display-name">FELIX</div></p>
 
-    </div>
+        <div id="navbar">
 
-    <div class="left-home">
-
-        <div class="display-news">
-            <img class="news-bg" src="news1.png" alt="">
+            <a class="navbar selected" href="#">HOME</a>
+            <a class="navbar" href="news.html">NEWS</a>
+            <a class="navbar" href="#about-us">ABOUT US</a>
+            <a class="navbar" href="#team">TEAM</a>
+            <a class="navbar" href="#profile">PROFILE</a>
+    
         </div>
-
-
-    </div>
-
-    <img class="to-do-list-bg" src="to-do-list.png" alt="">
         
-        <div class="display-nyatet-dong"> </div>
-        <img class="nyatet-dong-bg" src="nyatet-dong.png" alt="">
+        <div class="home-center">
 
+            <p class="display-shalom">Shalom,<div class="display-name">FELIX</div></p>
+    
+                <div class="news-display">
+                    <img class="news-img" src="news1.png" alt="">
+                    <img class="news-img" src="news2.png" alt="">
+                </div>
+            <div class="curhat-dong-display">
+                <a class="curhat-kana-daftar-dong-font" href="">CURHAT DONG</a>
+                <img class="bubble-chat-display" width="180%" src="curhat-dong-icon.png" alt="">
+                <img class="shadow-display" width="100%" src="shadow button.png" alt="">
+            </div>
+            <div class="kana-dong-display">
+                <a class="curhat-kana-daftar-dong-font" href="">KANA DONG</a>
+                <img class="kana-img-display" width="100%" src="people.png" alt="">
+                <img class="shadow-display" width="100%" src="shadow button.png" alt="">
+            </div>
+            <div class="daftar-dong-display">
+                <a class="curhat-kana-daftar-dong-font" href="">DAFTAR DONG</a>
+                <img class="daftar-img-display" width="68%" src="add-user.png" alt="">
+                <img class="shadow-display" width="100%" src="shadow button.png" alt="">
+            </div>
+            <div class="to-do-list-display">
+                <img class="to-do-list-img-display" width="97%" src="to-do-list.png" alt="">
+                <h1 class="to-do-list-font">TO DO LIST</h1>
+                <a class="view-list-font" href="">View List</a>
+                <a class="add-new-font" href="">Add New</a>
+            </div>
+            <div class="nyatet-dong-display">
+                <img img class="nyatet-dong-img-display" src="nyatet-dong.png" width="100%" alt="">
+                <h1 class="nyatet-dong-font">NYATET DONG</h1>
+                <a class="view-list-font-nyatet-dong" href="">View List</a>
+                <a class="add-new-font-nyatet-dong" href="">Add New</a>
+            </div>
+        </div>
     </div>
     
+    
+
 
 </body>
 </html>
