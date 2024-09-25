@@ -9,13 +9,13 @@
 // Navbar colouring and accessing
 $( "#navbar" ).selectable();
 
-$(".navbar").click(function(event) {
+$(".navbar-menu").click(function(event) {
 
 if ($(this).is('a')) {
       event.preventDefault(); 
 }
     // event.preventDefault();
-$(".navbar").removeClass("selected");  // Remove 'selected' class from all items
+$(".navbar-menu").removeClass("selected");  // Remove 'selected' class from all items
  $(this).addClass("selected");  // Add 'selected' class to clicked item
 });
 

@@ -1,3 +1,8 @@
+head {
+    font-family: "Montserrat", sans-serif;
+    color: black;
+}
+
 body {
     background-color: black;
     background-repeat: no-repeat;
@@ -8,36 +13,26 @@ body {
 }
 
 #navbar {
-    overflow: hidden;
-    text-align: center;
-    justify-content: center;
     display: flex;
-    margin-top: 10px;
+    justify-content: center;
+    margin: 0.5vw;
+    background-color: transparent;
 }
 
-.navbar {
-    display: block;
-    padding: 8px;
-    background-color: transparent;
+.navbar-menu {
     color: white;
     text-decoration: none;
+    margin: 4vh;
     text-align: center;
-    position: relative;
-    margin: 0.75%;
-    margin-right: 50px;
-    font-size: 14px;
-    border-color: none;
 }
 
-.navbar:hover {
+.navbar-menu:hover {
     color: #b194d7;
 }
 
-.navbar.selected {
+.navbar-menu.selected {
     color: #b194d7;
 }
-
-#navbar .ui-selected { background: none; color: #b194d7; }
 
 .tab-content {
     background-color: transparent;
