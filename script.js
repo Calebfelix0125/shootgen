@@ -1,11 +1,3 @@
-// function showTab (tabId){
-//     document.querySelectorAll('.home-center').forEach(div => {
-//         selection.style.display = 'none';
-//     })
-//     document.getElementById(tabId).style.display = 'block';
-// }
-
-  
 // Navbar colouring and accessing
 $( "#navbar" ).selectable();
 
@@ -15,7 +7,7 @@ if ($(this).is('a')) {
       event.preventDefault(); 
 }
     // event.preventDefault();
-$(".navbar-menu").removeClass("selected");  // Remove 'selected' class from all items
+$(".navbar-menu").removeClass("selected"); 
  $(this).addClass("selected");  // Add 'selected' class to clicked item
 });
 

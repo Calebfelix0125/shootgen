@@ -84,7 +84,7 @@ body {
 
 .home-lower-p {
     display: flex;
-    flex-direction: row;
+    align-content: center;
     /* background-color: pink; */
     width: 45%;
     height: 45%;
