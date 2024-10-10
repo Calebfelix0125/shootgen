@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     // Check if the list already has 5 tasks
     if (list.children.length >= maxTasks) {
-      alert('Kamu cuma bisa masukin 3 lists');
+      alert('Kamu cuma bisa masukin 3 lists. Hapus salah satunya.');
       return; // Stop from adding a new task
     }
 
