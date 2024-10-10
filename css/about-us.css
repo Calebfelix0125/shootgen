@@ -4,7 +4,6 @@ body {
   font-family: "Montserrat", sans-serif;
   color: white;
   overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 #navbar {
@@ -175,5 +174,61 @@ body {
 
   #check:checked ~ #navbar {
     right: 0; /* Show the navbar when checked */
+  }
+  .about-us-center {
+    width: 100%;
+    margin: auto;
+  }
+
+  .about-us-center {
+    width: 90%;
+    margin: auto;
+  }
+
+  .about-us-nilai,
+  .about-us-visi-misi {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .about-us-nilai,
+  .visi,
+  .misi {
+    width: 90%;
+    height: 30vh;
+    font-size: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nilai {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .about-us-nilai {
+    margin-top: 80px;
+  }
+
+  .about-us-nilai p,
+  .visi p,
+  .misi p {
+    font-size: 1rem;
+    margin: 10px;
+  }
+
+  .visi,
+  .misi {
+    height: auto;
+    font-size: 2.5rem;
+    padding: 20px;
+  }
+
+  .visi p,
+  .misi p {
+    font-size: 1rem;
+    font-weight: normal;
   }
 }
