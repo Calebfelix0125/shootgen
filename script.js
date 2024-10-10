@@ -57,3 +57,52 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+  const form = document.getElementById('todo-form');
+  const input = document.getElementById('todo-input');
+  const list = document.getElementById('todo-list');
+  const maxTasks = 3;  // Limit the number of tasks
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Check if the list already has 5 tasks
+    if (list.children.length >= maxTasks) {
+      alert('Kamu cuma bisa masukin 3 lists');
+      return; // Stop from adding a new task
+    }
+
+    const taskText = input.value.trim();
+    if (taskText !== "") {
+      const listItem = document.createElement('li');
+      listItem.style.fontWeight = 'bold';
+      
+      // Create a text node for the task
+      const taskNode = document.createTextNode(taskText);
+      
+      // Create the delete icon
+      const deleteIcon = document.createElement('span');
+      deleteIcon.textContent = '\tdelete';  
+      deleteIcon.style.fontStyle = 'italic';
+      deleteIcon.style.color = '#3a05a4';
+      deleteIcon.style.fontSize = 'medium';
+      deleteIcon.style.cursor = 'pointer';
+      deleteIcon.style.marginLeft = '10px';  
+      
+      // Add an event listener to the delete icon
+      deleteIcon.addEventListener('click', function() {
+          list.removeChild(listItem);
+      });
+
+      // Append the task text and delete icon to the list item
+      listItem.appendChild(taskNode);
+      listItem.appendChild(deleteIcon);
+      
+      // Append the new task to the list
+      list.appendChild(listItem);
+      
+      // Clear the input field
+      input.value = "";
+    }
+  });
+});

@@ -119,6 +119,32 @@ a {
     float: right;
 }
 
+.todo-list {
+    position: absolute;
+    list-style-type: none;
+    width: 100%;
+    max-height: 200px;  /* Fixed height for scrolling */
+    overflow-y: auto;   /* Enable vertical scrolling */
+    padding: 10px;
+    margin-bottom: 10px;
+    /* border: 1px solid #ddd; */
+    border-radius: 5px;
+    overflow-x: hidden;  /* Prevent horizontal scrolling */
+}
+
+.todo-list li {
+    /* padding: 8px; */
+    /* background-color: #f9f9f9; */
+    font-size: x-large;
+    /* border-bottom: 1px solid #ddd; */
+    list-style: none;
+}
+
+.todo-list li:last-child {
+    border-bottom: none;
+}
+
+
 .todo-input {
     flex: 1;
     padding: 10px;
