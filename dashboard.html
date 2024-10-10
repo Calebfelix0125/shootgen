@@ -1,8 +1,16 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HOME</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/dashboard-style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,20 +23,26 @@
     <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
     <script src="script.js"></script>
 
+    <input type="checkbox" id="check" />
     <div id="navbar">
       <a class="navbar-menu selected" href="dashboard.html">HOME</a>
       <a class="navbar-menu" href="news.html">NEWS</a>
       <a class="navbar-menu" href="about-us.html">ABOUT US</a>
       <a class="navbar-menu" href="team.html">TEAM</a>
       <a class="navbar-menu" href="profile.html">PROFILE</a>
+      <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
     </div>
+    <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
   </head>
   <body>
     <div class="home-container">
+      <!-- Home upper left (1st row) -->
       <div class="home-upper-left">
         <img class="news-img" src="img/news1.png" alt="" />
         <img class="news-img" src="img/news2.png" alt="" />
       </div>
+
+      <!-- Home upper right (2nd row) -->
       <div class="home-upper-right">
         <h1 class="to-do-list-font">TO DO LIST</h1>
         <img width="97%" height="55%" src="img/to-do-list.png" alt="" />
@@ -42,6 +56,7 @@
         </form>
       </div>
 
+      <!-- Curhat Kana (3rd row) -->
       <div class="home-lower-p">
         
         <a href="">
@@ -82,6 +97,7 @@
         </a>
       </div>
 
+      <!-- Nyatet Dong (4th row) -->
       <div class="home-lower">
         <h1 class="nyatet-dong-font">VERSE OF THE WEEK</h1>
         <h4 class="ayat"> Karena begitu besar kasih Allah akan dunia ini, sehingga Ia telah mengaruniakan Anak-Nya yang tunggal, supaya setiap orang yang percaya kepada-Nya tidak binasa, melainkan beroleh hidup yang kekal.</h4>

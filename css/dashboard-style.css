@@ -1,94 +1,93 @@
-    /* /* body {
-        background-color: black;
-        background-repeat: no-repeat;
-        font-family: "Montserrat", sans-serif;
-        color: white;
-        overflow-x:hidden;
-        overflow-y:hidden;
-    } */
-    
-head {
-    font-family: "Montserrat", sans-serif;
-    color: black;
-}
-
+/* General styles */
 body {
-    background-color: black;
-    background-repeat: no-repeat;
-    font-family: "Montserrat", sans-serif;
-    color: white;
-    overflow-x:hidden;
-    overflow-y:hidden;
+  background-color: black;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  overflow-x: hidden;
 }
 
 #navbar {
-    display: flex;
-    justify-content: center;
-    margin: 0.5vw;
-    background-color: transparent;
+  display: flex;
+  justify-content: center;
+  padding: 1vw;
+  background-color: transparent;
 }
 
 .navbar-menu {
-    color: white;
-    text-decoration: none;
-    margin: 4vh;
-    text-align: center;
-}
-
-.navbar-menu:hover {
-    color: #b194d7;
+  color: white;
+  text-decoration: none;
+  margin: 4vh;
 }
 
 .navbar-menu.selected {
-    color: #b194d7;
+  color: #b194d7;
 }
 
+.open-menu,
+.close-menu {
+  position: absolute;
+  color: var(--color1);
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: none;
+}
+.open-menu {
+  top: 20px; /* Move it to the top */
+  right: 20px; /* Align to the right */
+}
+.close-menu {
+  top: 20px; /* Align to the top */
+  right: 20px; /* Align to the right */
+}
+
+/* Main container */
 .home-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    /* flex-direction: column; */
-    background-color: transparent;
-    /* padding-bottom: 5%; */
-    width: 100%;
-    height: 87%;
-    
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: auto;
 }
 
+/* Upper left (1st column) */
 .home-upper-left {
-    /* justify-content: left; */
-    background-color: black;
-    width: 45%;
-    height: 45%;
-    margin: 1vw;
-    border-radius: 15px;
+  background-color: black;
+  width: 45%;
+  height: 35vh; /* Reduced height */
+  margin: 1vw;
+  border-radius: 15px;
 }
 
+.news-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+/* Upper right (2nd column) */
 .home-upper-right {
-    /* justify-content: left; */
-    background-color: #5e17eb;
-    width: 45%;
-    height: 45%;
-    margin: 1vw;
-    border-radius: 15px;
+  background-color: #5e17eb;
+  width: 45%;
+  height: 35vh; /* Reduced height */
+  margin: 1vw;
+  border-radius: 15px;
 }
 
-.home-lower {
-    background-color: white;
-    width: 45%;
-    height: 45%;
-    margin: 1vw;
-    border-radius: 15px;
-    position: relative;
+.to-do-list-font {
+  font-style: italic;
+  margin: 1vw;
 }
 
+/* Curhat Kana (3rd column) */
 .home-lower-p {
-    display: flex;
-    /* background-color: pink; */
-    width: 45%;
-    height: 45%;
-    margin: 1vw;
-    gap: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 45%;
+  /* height: 45%; */
+  height: 35vh; 
+  margin: 1vw;
+  gap: 10px;
 }
 
 a {
@@ -156,33 +155,24 @@ a {
 }
 
 .curhat-kana-daftar-dong-font {
-    display: block;
-    font-size: xx-large;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-    margin: 1vw;
+  display: block;
+  font-size: xx-large;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  margin: 1vw;
 }
 
-.shadow-display {
-    height: 65%;
-    width: 100%;
-    border-radius: 15px;
-}
-
-.bubble-chat-display {
-    margin-top: 2vh;
-    margin-left: -1.5vw;
-    z-index: 10;
-}
-
-.kana-img-display {
-    opacity: 15%;
-}
-
-.daftar-img-display {
-    display: block;
-    opacity: 15%;
+/* Ayat (4th column) */
+.home-lower {
+  background-color: white;
+  width: 45%;
+  height: 35vh; 
+  /* height: 45%; */
+  position: relative;
+  margin: 1vw;
+  border-radius: 15px;
+  /* padding: 1vw; */
 }
 
 .add-new-nyatet-dong {
@@ -234,290 +224,137 @@ a {
     font-style: italic;
 }
 
-.view-list-to-do-list{
+#check {
+  display: none;
+}
+
+/* Media query for responsive layout on mobile */
+@media only screen and (max-width: 768px) {
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start; /* Align to start */
+    justify-content: flex-start; /* Align to start */
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    background-color: var(--color2);
+    transition: all 0.2s ease-in-out;
+    background-color: black;
+  }
+  #navbar li {
+    margin-top: 40px;
+  }
+  #navbar li a {
+    padding: 10px;
+  }
+  .open-menu,
+  .close-menu {
+    display: block; /* Show both icons */
+  }
+  #check:checked ~ #navbar {
+    right: 0; /* Show the navbar when checked */
+  }
+  /* Stack elements in one column */
+  .home-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+  }
+
+  .home-upper-left,
+  .home-upper-right,
+  .home-lower,
+  .home-lower-p {
+    width: 90%;
+    height: auto;
+    margin: 1vw 0;
+    /* padding-bottom: 1vw; */
+  }
+
+  /* Adjust To Do List and Nyatet Dong height */
+  .home-upper-right,
+  .home-lower {
+    height: 30vh; /* Decrease height for To Do List and Nyatet Dong */
+  }
+
+  .curhat-kana-display {
+    width: 100%;
+    height: 15vh; /* Make Curhat Kana smaller */
+    margin: 1vw 0;
+  }
+
+  .curhat-kana-daftar-dong-font {
+    font-size: large; /* Decrease font size for Curhat Kana */
+  }
+
+  /* Adjust font size for view and add links */
+  .add-new-nyatet-dong,
+  .view-list-nyatet-dong,
+  .add-new-to-do-list,
+  .view-list-to-do-list {
+    font-size: medium; /* Reduce font size on mobile */
+  }
+}
+
+/* Media query for iPad Air (or similar screens) */
+@media only screen and (min-width: 769px) and (max-width: 1180px) {
+  /* Keep the desktop layout but reduce sizes */
+
+  .home-upper-left,
+  .home-upper-right,
+  .home-lower,
+  .home-lower-p {
+    width: 40%; /* Reduce width slightly for iPad */
+    height: 30vh; /* Slightly reduce height */
+    margin: 1vw;
+  }
+
+  /* .ayat {
+    display:inline;
+    margin: 1vh;
+    color: #5e17eb;
+    font-size:small;
+    text-align: justify;
+  }
+
+  .nama-ayat {
     position: absolute;
-    color: white;
-    margin-left: 25vw;
-    font-size:larger;
-    text-align: right;
-    font-style: italic;
+    display:inline;
+    margin-top: 20vh;
+    margin-left: 1.5vh;
+    color: black;
+    font-size:medium;
+} */
+
+  .curhat-kana-display {
+    width: 30%; /* Adjust width for Curhat Kana */
+    height: 30vh; /* Ensure consistent height */
+  }
+
+  /* Adjust image and text sizes */
+  .news-img,
+  .curhat-kana-display img {
+    width: 100%;
+    height: auto;
+  }
+
+  .curhat-kana-daftar-dong-font {
+    font-size: large; /* Reduce font size to fit better */
+  }
+
+  /* Adjust To Do List and Nyatet Dong */
+  .home-upper-right,
+  .home-lower {
+    height: 30vh; /* Reduce height for iPad Air */
+  }
+
+  .add-new-nyatet-dong,
+  .view-list-nyatet-dong,
+  .add-new-to-do-list,
+  .view-list-to-do-list {
+    font-size: medium; /* Slightly smaller font for buttons */
+  }
 }
-
-li {
-    list-style-type: none;
-}
-
-@media only screen and (max-width: 1440px) {
-
-    
-}
-
-    /* #navbar {
-        overflow: hidden;
-        text-align: center;
-        justify-content: center;
-        display: flex;
-        margin-top: 10px;
-    }
-    
-    .navbar {
-        display: block;
-        padding: 8px;
-        background-color: transparent;
-        color: white;
-        text-decoration: none;
-        text-align: center;
-        position: relative;
-        margin: 0.75%;
-        margin-right: 50px;
-        font-size: 14px;
-        border-color: none;
-    }
-
-    .navbar:hover {
-        color: #b194d7;
-    }
-
-    .navbar.selected {
-        color: #b194d7;
-    }
-    
-    #navbar .ui-selected { background: none; color: #b194d7; }
-
-    .tab-content {
-        background-color: transparent;
-        border-top: none;
-    } */
-
-    /* #home {
-        margin-top: 30px;
-        margin-left: 30px;
-        margin-right: 30px;
-    } */
-
-    /* .display-shalom {
-        margin-top: 0px;
-        position: absolute;
-        font-size: 35px;
-        text-align: left;
-        font-style: italic;
-    }
-
-    .display-name {
-        color: #b194d7;
-        margin-left: 160px;
-        font-size: 36px;
-        position:absolute;
-        font-weight: bold;
-    }
-
-    .home-center {
-        width: 95%;
-        height: 85%;
-        margin: auto;
-        margin-top: 25px;
-        /* margin-left: 30px;
-        margin-right: 30px; */
-        /* margin-bottom: 30px;
-        background-color: pink;
-        display: flex;
-    }
-
-    .news-display {
-        display: flex;
-        width: 50%;
-        height: 35%;
-        margin-top: 60px;
-        margin-right: 15px;
-        margin-bottom: 15px;
-        background-color: transparent;
-        border-radius: 15px;
-    }
-
-    .news-img {
-        position: flex;
-        border-radius: 15px;
-        /* margin-top: -60px; 
-        width: 100%;
-        height: 100%;
-    }
-
-    .curhat-dong-display {
-        display: flex;
-        width: 15%;
-        height: 36.7%;
-        margin-top: 360px;
-        background-color: black;
-        border-radius: 15px;
-        cursor: pointer;
-    }
-
-    .curhat-dong-display:hover {
-        background-color: #b194d7;
-    }
-
-    .curhat-kana-daftar-dong-font {
-        display: flex;
-        margin-top: 20px;
-        margin-left: 15px;
-        text-align: left;
-        font-size: xx-large;
-        font-weight: bold;
-        text-decoration: none;
-        color: white;
-    }
-
-    .bubble-chat-display {
-        display: flex;
-        margin-left: -80px;
-        margin-top: 90px;
-        z-index: 10;
-    }
-
-    .kana-dong-display{
-        display: flex;
-        width: 16%;
-        height: 36.7%;
-        margin-top: 360px;
-        margin-left: 236px;
-        background-color: black;
-        border-radius: 15px;
-        cursor: pointer;
-    }
-
-    .kana-dong-display:hover {
-        background-color: #b194d7;
-    }
-
-    .kana-img-display {
-        display: flex;
-        margin-left: 1px;
-        margin-top: 75px;
-        opacity: 15%;
-    }
-
-    .daftar-dong-display {
-        display: flex;
-        width: 15%;
-        height: 36.7%;
-        margin-top: 360px;
-        margin-left: 487px;
-        background-color: black;
-        border-radius: 15px;
-        cursor: pointer;
-
-    }
-
-    .daftar-dong-display:hover {
-        background-color: #b194d7;
-    }
-
-    .daftar-img-display {
-        display: flex;
-        opacity: 15%;
-        margin-top: 115px;
-        margin-left: 25px;
-        margin-right: auto;
-    }
-
-    .shadow-display {
-        margin-top: 15px;
-        border-radius: 15px;
-        height: 270px;
-    }
-
-    .to-do-list-display {
-        display: flex;
-        width: 41.8%;
-        height: 35%;
-        margin-top: 60px;
-        margin-right: 15px;
-        margin-bottom: 15px;
-        margin-left: 725px;
-        background-color: #5e17eb;
-        border-radius: 15px;
-    }
-
-    .to-do-list-img-display {
-        display: flex;
-        z-index: 20;
-    }
-
-    .to-do-list-font {
-        display: flex;
-        font-style: italic;
-        margin-left: 15px;
-        z-index: 20;
-    }
-
-    .view-list-font {
-        display: flex;
-        margin-top: 230px;
-        margin-left: 320px;
-        z-index: 20;
-        color: white;
-        font-size: large;
-        font-style: italic;
-        text-decoration: none;
-    }
-
-    .add-new-font {
-        display: flex;
-        margin-top: 230px;
-        margin-left: 470px;
-        z-index: 20;
-        color: white;
-        font-size: large;
-        font-weight: bold;
-        font-style: italic;
-        text-decoration: none;
-    }
-
-    .view-list-font-nyatet-dong {
-        display: flex;
-        margin-top: 245px;
-        margin-left: 320px;
-        z-index: 50;
-        color: black;
-        font-size: large;
-        font-style: italic;
-        text-decoration: none;
-    }
-
-    .add-new-font-nyatet-dong {
-        display: flex;
-        margin-top: 245px;
-        margin-left: 470px;
-        z-index: 100;
-        color: black;
-        font-size: large;
-        font-weight: bold;
-        font-style: italic;
-        text-decoration: none;
-    }
-
-    /* .nyatet-dong-display {
-        display: flex;
-        width: 41.8%;
-        height: 36.7%;
-        margin-top: 360px;
-        margin-right: 15px;
-        margin-bottom: 15px;
-        margin-left: 725px;
-        background-color: white;
-        border-radius: 15px;
-    }
-
-    .nyatet-dong-img-display {
-        display: flex;
-    }
-
-    .nyatet-dong-font {
-        display: flex;
-        font-style: italic;
-        color: black;
-        margin-left: 15px;
-        z-index: 30;
-    }  */
-
-    /* @media only screen and (min-width: ) */
