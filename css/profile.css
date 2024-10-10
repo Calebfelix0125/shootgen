@@ -4,7 +4,6 @@ body {
   font-family: "Montserrat", sans-serif;
   color: white;
   overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 #navbar {
@@ -169,5 +168,9 @@ body {
 
   #check:checked ~ #navbar {
     right: 0; /* Show the navbar when checked */
+  }
+
+  .profile-container {
+    margin-top: 100px;
   }
 }
