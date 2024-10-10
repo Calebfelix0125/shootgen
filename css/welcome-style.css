@@ -1,152 +1,203 @@
 body {
-    background-color: black;
-    background-image: url("purple-shadow.png");
-    background-repeat: no-repeat;
-    font-family: "Montserrat", sans-serif;
+  background-color: black;
+  background-image: url("purple-shadow.png");
+  background-repeat: no-repeat;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
 }
 
 .left-upper-img {
-    position: absolute;
-    margin-top: 20px;
-    margin-left: -85px;
-    width: 37%;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: -85px;
+  width: 37%;
 }
 
-.right-img{
-    position: absolute;
-    margin-top: 330px;
-    margin-left: 320px;
-    width: 30%;
+.right-img {
+  position: absolute;
+  margin-top: 330px;
+  margin-left: 320px;
+  width: 30%;
 }
 
 .left-lower-img {
-    position: absolute;
-    margin-top: 500px;
-    margin-left: -55px;
-    width: 27%;
+  position: absolute;
+  margin-top: 500px;
+  margin-left: -55px;
+  width: 27%;
 }
 
 .upper-right-text {
-    position:absolute;
-    color: #b194d7;
-    font-size: 35px;
-    margin-top: 155px;
-    margin-left: 405px;
-    z-index: 1;
+  position: absolute;
+  color: #b194d7;
+  font-size: 35px;
+  margin-top: 155px;
+  margin-left: 405px;
+  z-index: 1;
 }
 
 .upper-right-text-b {
-    position:absolute;
-    color: white;
-    font-size: 40px;
-    margin-top: 200px;
-    margin-left: 405px;
-    font-weight: bold;
-    z-index: 1;
+  position: absolute;
+  color: white;
+  font-size: 40px;
+  margin-top: 200px;
+  margin-left: 405px;
+  font-weight: bold;
+  z-index: 1;
 }
 
 .upper-right-text-unbold {
-    position:absolute;
-    color: white;
-    font-size: 40px;
-    margin-top: 200px;
-    margin-left: 557px;
+  position: absolute;
+  color: white;
+  font-size: 40px;
+  margin-top: 200px;
+  margin-left: 557px;
 }
 
 .upper-left-text-r1 {
-    position:absolute;
-    color: white;
-    font-size: 40px;
-    margin-top: 305px;
-    margin-left: 250px;
+  position: absolute;
+  color: white;
+  font-size: 40px;
+  margin-top: 305px;
+  margin-left: 250px;
 }
 
 .upper-left-text-r2 {
-    position:absolute;
-    color: white;
-    font-size: 40px;
-    margin-top: 350px;
-    margin-left: 229px;
+  position: absolute;
+  color: white;
+  font-size: 40px;
+  margin-top: 350px;
+  margin-left: 229px;
 }
 
 .upper-left-text-r3 {
-    position:absolute;
-    color: #b194d7;
-    font-size: 40px;
-    margin-top: 395px;
-    margin-left: 126px;
-    font-weight: bold;
+  position: absolute;
+  color: #b194d7;
+  font-size: 40px;
+  margin-top: 395px;
+  margin-left: 126px;
+  font-weight: bold;
 }
 
 .right {
-    position:absolute;
-    margin-top: 125px;
-    margin-left: 950px;
-    margin-right: 200px;
+  position: absolute;
+  margin-top: 125px;
+  margin-left: 950px;
+  margin-right: 200px;
 }
 
 .logo-display {
-    display: block;
-    width: 225px;
-    align-self: center;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  width: 225px;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .form {
-    margin-top: 15px;
-    margin-bottom: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .form-text {
-    text-align: left;
-    color: white;
+  text-align: left;
+  color: white;
 }
 
 .form-box {
-    border-color: transparent;
-    font-family: "Montserrat", sans-serif;
-    border-radius: 20px;
-    width: 300px;
-    height: 35px;
-    margin: 3% 0;
-    /* box-sizing: border-box; */
-    align-items: center;
-    font-size: 13px;
-    font-style: italic;
-    padding: 12px 20px;
+  border-color: transparent;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 20px;
+  width: 300px;
+  height: 35px;
+  margin: 3% 0;
+  /* box-sizing: border-box; */
+  align-items: center;
+  font-size: 13px;
+  font-style: italic;
+  padding: 12px 20px;
 }
 
 .submit-button {
-    background-color: #3a05a4;
-    color: white;
-    font-weight: bold;
-    font-family: "Montserrat", sans-serif;
-    font-size: 17px;
-    border-color: transparent;
-    border-radius: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100px;
-    height: 35px;
+  background-color: #3a05a4;
+  color: white;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  border-color: transparent;
+  border-radius: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  height: 35px;
 }
 
 .submit-button:hover {
-    background-color: white;
-    color: #3a05a4;
+  background-color: white;
+  color: #3a05a4;
 }
 
 a {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    margin: 2%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  margin: 2%;
 }
 
 a:hover {
-    color:#3a05a4;
+  color: #3a05a4;
+}
+
+@media (max-width: 768px) {
+  .left-upper-img,
+  .right-img,
+  .left-lower-img {
+    display: none; /* Hide images on mobile */
+  }
+
+  .text-container {
+    display: none; /* Hide text container on mobile */
+  }
+
+  .right {
+    position: relative; /* Change to relative positioning */
+    margin: 0 auto; /* Center align */
+    top: 0; /* Reset top positioning */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center all items */
+  }
+
+  .logo-display {
+    width: 150px; /* Adjust logo size for mobile */
+    margin-bottom: 20px; /* Add spacing below logo */
+  }
+
+  .form {
+    width: 100%; /* Allow form to take full width */
+    max-width: 400px; /* Set a max width for better layout */
+  }
+
+  .form-text {
+    text-align: left; /* Keep labels left aligned */
+    color: white; /* Ensure text color is consistent */
+    margin-bottom: 5px; /* Space between label and input */
+  }
+
+  .form-box {
+    width: 80%; /* Full width form boxes for mobile */
+    margin-bottom: 15px; /* Space between input fields */
+  }
+
+  .submit-button {
+    margin-top: 10px; /* Space above the button */
+  }
+
+  a {
+    margin-top: 20px; /* Space above the sign-up link */
+  }
 }
