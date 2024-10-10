@@ -126,7 +126,8 @@ a {
     padding: 10px;
     border: none;
     border-radius: 20px;
-    margin: 1vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
     background-color: white;
 }
 
@@ -141,9 +142,8 @@ a {
     width: 90px;
     height: 3vw;
     margin-right: 1vw;
-    margin-top: auto;
-    margin-bottom: auto;
-    /* margin-bottom: 1vw; */
+    /* margin-top: auto;
+    margin-bottom: auto; */
     cursor: pointer;
     /* height: 35px; */
 }
