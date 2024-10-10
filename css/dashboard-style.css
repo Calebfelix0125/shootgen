@@ -1,4 +1,3 @@
-/* General styles */
 body {
   background-color: black;
   font-family: "Montserrat", sans-serif;
@@ -32,12 +31,12 @@ body {
   display: none;
 }
 .open-menu {
-  top: 20px; /* Move it to the top */
-  right: 20px; /* Align to the right */
+  top: 20px;
+  right: 20px;
 }
 .close-menu {
-  top: 20px; /* Align to the top */
-  right: 20px; /* Align to the right */
+  top: 20px;
+  right: 20px;
 }
 
 /* Main container */
@@ -53,7 +52,7 @@ body {
 .home-upper-left {
   background-color: black;
   width: 45%;
-  height: 35vh; /* Reduced height */
+  height: 35vh;
   margin: 1vw;
   border-radius: 15px;
 }
@@ -68,7 +67,7 @@ body {
 .home-upper-right {
   background-color: #5e17eb;
   width: 45%;
-  height: 35vh; /* Reduced height */
+  height: 35vh;
   margin: 1vw;
   border-radius: 15px;
 }
@@ -84,7 +83,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   width: 45%;
-  height: 35vh; /* Reduced height */
+  height: 35vh;
   margin: 1vw;
   gap: 10px;
 }
@@ -110,7 +109,7 @@ body {
 .home-lower {
   background-color: white;
   width: 45%;
-  height: 35vh; /* Reduced height */
+  height: 35vh;
   margin: 1vw;
   border-radius: 15px;
   padding: 1vw;
@@ -142,12 +141,11 @@ li {
   display: none;
 }
 
-/* Media query for responsive layout on mobile */
 @media only screen and (max-width: 768px) {
   #navbar {
     flex-direction: column;
-    align-items: flex-start; /* Align to start */
-    justify-content: flex-start; /* Align to start */
+    align-items: flex-start;
+    justify-content: flex-start;
     width: 80%;
     height: 100vh;
     position: fixed;
@@ -166,12 +164,12 @@ li {
   }
   .open-menu,
   .close-menu {
-    display: block; /* Show both icons */
+    display: block;
   }
   #check:checked ~ #navbar {
     right: 0; /* Show the navbar when checked */
   }
-  /* Stack elements in one column */
+
   .home-container {
     flex-direction: column;
     align-items: center;
@@ -187,50 +185,44 @@ li {
     margin: 1vw 0;
   }
 
-  /* Adjust To Do List and Nyatet Dong height */
   .home-upper-right,
   .home-lower {
-    height: 30vh; /* Decrease height for To Do List and Nyatet Dong */
+    height: 30vh;
   }
 
   .curhat-kana-display {
     width: 100%;
-    height: 15vh; /* Make Curhat Kana smaller */
+    height: 15vh;
     margin: 1vw 0;
   }
 
   .curhat-kana-daftar-dong-font {
-    font-size: large; /* Decrease font size for Curhat Kana */
+    font-size: large;
   }
 
-  /* Adjust font size for view and add links */
   .add-new-nyatet-dong,
   .view-list-nyatet-dong,
   .add-new-to-do-list,
   .view-list-to-do-list {
-    font-size: medium; /* Reduce font size on mobile */
+    font-size: medium;
   }
 }
 
-/* Media query for iPad Air (or similar screens) */
 @media only screen and (min-width: 769px) and (max-width: 1180px) {
-  /* Keep the desktop layout but reduce sizes */
-
   .home-upper-left,
   .home-upper-right,
   .home-lower,
   .home-lower-p {
-    width: 40%; /* Reduce width slightly for iPad */
-    height: 30vh; /* Slightly reduce height */
+    width: 40%;
+    height: 30vh;
     margin: 1vw;
   }
 
   .curhat-kana-display {
-    width: 30%; /* Adjust width for Curhat Kana */
-    height: 30vh; /* Ensure consistent height */
+    width: 30%;
+    height: 30vh;
   }
 
-  /* Adjust image and text sizes */
   .news-img,
   .curhat-kana-display img {
     width: 100%;
@@ -238,19 +230,18 @@ li {
   }
 
   .curhat-kana-daftar-dong-font {
-    font-size: large; /* Reduce font size to fit better */
+    font-size: large;
   }
 
-  /* Adjust To Do List and Nyatet Dong */
   .home-upper-right,
   .home-lower {
-    height: 30vh; /* Reduce height for iPad Air */
+    height: 30vh;
   }
 
   .add-new-nyatet-dong,
   .view-list-nyatet-dong,
   .add-new-to-do-list,
   .view-list-to-do-list {
-    font-size: medium; /* Slightly smaller font for buttons */
+    font-size: medium;
   }
 }
