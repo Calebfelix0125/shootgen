@@ -1,8 +1,17 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HOME</title>
+    <!-- <link rel="stylesheet" href="css/dashboard-style.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/dashboard-style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,20 +24,26 @@
     <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
     <script src="script.js"></script>
 
+    <input type="checkbox" id="check" />
     <div id="navbar">
       <a class="navbar-menu selected" href="dashboard.html">HOME</a>
       <a class="navbar-menu" href="news.html">NEWS</a>
       <a class="navbar-menu" href="about-us.html">ABOUT US</a>
       <a class="navbar-menu" href="team.html">TEAM</a>
-      <a class="navbar-menu" href="profiile.html">PROFILE</a>
+      <a class="navbar-menu" href="profile.html">PROFILE</a>
+      <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
     </div>
+    <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
   </head>
   <body>
     <div class="home-container">
+      <!-- Home upper left (1st row) -->
       <div class="home-upper-left">
         <img class="news-img" src="img/news1.png" alt="" />
         <img class="news-img" src="img/news2.png" alt="" />
       </div>
+
+      <!-- Home upper right (2nd row) -->
       <div class="home-upper-right">
         <h1 class="to-do-list-font">TO DO LIST</h1>
         <img width="97%" height="65%" src="img/to-do-list.png" alt="" />
@@ -37,6 +52,8 @@
           <a class="add-new-to-do-list" href="">Add New</a>
         </li>
       </div>
+
+      <!-- Curhat Kana (3rd row) -->
       <div class="home-lower-p">
         <div class="curhat-kana-display">
           <a class="curhat-kana-daftar-dong-font" href="">CURHAT DONG</a>
@@ -66,6 +83,8 @@
           />
         </div>
       </div>
+
+      <!-- Nyatet Dong (4th row) -->
       <div class="home-lower">
         <h1 class="nyatet-dong-font">NYATET DONG</h1>
         <img src="img/nyatet-dong.png" width="100%" height="65%" alt="" />
@@ -75,57 +94,5 @@
         </li>
       </div>
     </div>
-
-    <!-- <div id="home">
-
-        <div id="navbar">
-
-            <a class="navbar selected" href="#">HOME</a>
-            <a class="navbar" href="news.html">NEWS</a>
-            <a class="navbar" href="#about-us">ABOUT US</a>
-            <a class="navbar" href="#team">TEAM</a>
-            <a class="navbar" href="#profile">PROFILE</a>
-
-        </div>
-
-        <div class="home-center">
-
-            <p class="display-shalom">Shalom,<div class="display-name">FELIX</div></p>
-
-                <div class="news-display">
-                    <img class="news-img" src="img/news1.png" alt="">
-                    <img class="news-img" src="img/news2.png" alt="">
-                </div>
-            <div class="curhat-dong-display">
-                <a class="curhat-kana-daftar-dong-font" href="">CURHAT DONG</a>
-                <img class="bubble-chat-display" width="180%" src="img/curhat-dong-icon.png" alt="">
-                <img class="shadow-display" width="100%" src="img/shadow button.png" alt="">
-            </div>
-            <div class="kana-dong-display">
-                <a class="curhat-kana-daftar-dong-font" href="">KANA DONG</a>
-                <img class="kana-img-display" width="100%" src="img/people.png" alt="">
-                <img class="shadow-display" width="100%" src="img/shadow button.png" alt="">
-            </div>
-            <div class="daftar-dong-display">
-                <a class="curhat-kana-daftar-dong-font" href="">DAFTAR DONG</a>
-                <img class="daftar-img-display" width="68%" src="img/add-user.png" alt="">
-                <img class="shadow-display" width="100%" src="img/shadow button.png" alt="">
-            </div>
-            <div class="to-do-list-display">
-                <img class="to-do-list-img-display" width="97%" src="img/to-do-list.png" alt="">
-                <h1 class="to-do-list-font">TO DO LIST</h1>
-                <a class="view-list-font" href="">View List</a>
-                <a class="add-new-font" href="">Add New</a>
-            </div>
-            <div class="nyatet-dong-display">
-                <img img class="nyatet-dong-img-display" src="img/nyatet-dong.png" width="100%" alt="">
-                <h1 class="nyatet-dong-font">NYATET DONG</h1>
-                <a class="view-list-font-nyatet-dong" href="">View List</a>
-                <a class="add-new-font-nyatet-dong" href="">Add New</a>
-            </div>
-        </div>
-    </div>
-
-     -->
   </body>
 </html>
