@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en"></html>
 <head>
     <meta charset="UTF-8">
@@ -15,15 +16,20 @@
 
     <div id="home">
         <div id = "navbar">
-            <a class="navbar-menu" href="dashboard.html">HOME</a>
-            <a class="navbar-menu" href="news.html">NEWS</a>
-            <a class="navbar-menu" href="about-us.html">ABOUT US</a>
-            <a class="navbar-menu" href="team.html">TEAM</a>
-            <a class="navbar-menu selected" href="profile.html">PROFILE</a>
+            <input type="checkbox" id="check" />
+            <div id="navbar">
+              <a class="navbar-menu selected" href="dashboard.html">HOME</a>
+              <a class="navbar-menu" href="news.html">NEWS</a>
+              <a class="navbar-menu" href="about-us.html">ABOUT US</a>
+              <a class="navbar-menu" href="team.html">TEAM</a>
+              <a class="navbar-menu" href="profile.html">PROFILE</a>
+              <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+            </div>
+            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
         </div>
-        <!DOCTYPE html>
-        <div class="profile-container">
-          <h1 class="logo">SHOOTGEN</h1>
+
+    <div class="profile-container">
+        <h1 class="logo">SHOOTGEN</h1>
 
           <div class="profile-card">
               <div class="profile-info-nama">

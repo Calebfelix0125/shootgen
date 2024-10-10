@@ -1,39 +1,58 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WELCOME</title>
-    <link rel="stylesheet" href="css/welcome-style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="css/welcome-style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="background-images">
+      <img class="left-upper-img" src="img/welcome-left-upper.png" alt="" />
+      <img class="right-img" src="img/welcome-left-upper.png" alt="" />
+      <img class="left-lower-img" src="img/welcome-left-upper.png" alt="" />
+    </div>
 
-    <img class="left-upper-img" src="img/welcome-left-upper.png" alt="">
-    <img class="right-img" src="img/welcome-left-upper.png" alt="">
-    <img class="left-lower-img" src="img/welcome-left-upper.png" alt="">
-
-    <p class="upper-right-text">we are</p>
-    <p class="upper-right-text-b"> SHOOT <div class="upper-right-text-unbold">GEN </div></p>
-    <p class="upper-left-text-r1">more</p>
-    <p class="upper-left-text-r2">than a</p>
-    <p class="upper-left-text-r3">community</p>
+    <div class="text-container">
+      <p class="upper-right-text">we are</p>
+      <p class="upper-right-text-b">
+        SHOOT <span class="upper-right-text-unbold">GEN </span>
+      </p>
+      <p class="upper-left-text-r1">more</p>
+      <p class="upper-left-text-r2">than a</p>
+      <p class="upper-left-text-r3">community</p>
+    </div>
 
     <div class="right">
-        <img class="logo-display" src="img/shoot-logo.png" alt="">
+      <img class="logo-display" src="img/shoot-logo.png" alt="" />
 
-        <div class="form">
-            <form action="dashboard.html">
-                <label class="form-text" for="email">Email:</label><br>
-                <input class="form-box" type="email" id="email" placeholder="Tulis email yang kamu daftarin..." required><br>
-                <label class="form-text" for="password">Password:</label> <br>
-                <input class="form-box" type="password" id="password" placeholder="Tulis password kamu..." required><br><br>
-                <input class="submit-button" type="submit" value="Login"> <br>
-            </form>
-        </div>
+      <div class="form">
+        <form action="dashboard.html">
+          <label class="form-text" for="email">Email:</label><br />
+          <input
+            class="form-box"
+            type="email"
+            id="email"
+            placeholder="Tulis email yang kamu daftarin..."
+            required
+          /><br />
+          <label class="form-text" for="password">Password:</label><br />
+          <input
+            class="form-box"
+            type="password"
+            id="password"
+            placeholder="Tulis password kamu..."
+            required
+          /><br /><br />
+          <input class="submit-button" type="submit" value="Login" /><br />
+        </form>
+      </div>
 
-        
-        <a href="sign-up.html"> Don't have an account? Sign Up</a>
-        
+      <a href="sign-up.html">Don't have an account? Sign Up</a>
     </div>
-</body>
+  </body>
 </html>

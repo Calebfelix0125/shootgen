@@ -1,67 +1,128 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NEWS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/news-style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
       rel="stylesheet"
     />
     <script src="script.js"></script>
   </head>
   <body>
+    <input type="checkbox" id="check" />
     <div id="navbar">
       <a class="navbar-menu" href="dashboard.html">HOME</a>
       <a class="navbar-menu selected" href="news.html">NEWS</a>
       <a class="navbar-menu" href="about-us.html">ABOUT US</a>
       <a class="navbar-menu" href="team.html">TEAM</a>
-      <a class="navbar-menu" href="profiile.html">PROFILE</a>
+      <a class="navbar-menu" href="profile.html">PROFILE</a>
+      <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
     </div>
+    <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
 
     <div class="container">
+      <span class="prev" onclick="changeNews(-1)">&#10094;</span>
+      <span class="next" onclick="changeNews(1)">&#10095;</span>
 
-        <span class="next">&#10095</span>
-        <span class="prev">&#10094</span>
-
-      <!-- Bagian news -->
-      <div class="news-container">
-
-        <div class="news" id="last-img">
-            <img src="img/news3.png" alt="" />
-          </div>
-
-        <div class="news">
-          <img src="img/news1.png" alt="" />
-        </div>
-
-        <div class="news">
-          <img src="img/news2.png" alt="" />
-        </div>
-
-        <div class="news">
+      <div class="news-container" id="news-container">
+        <div
+          class="news active"
+          data-title="TEAM BUILDING, GATHERING PELAYAN, MAP, DAN SEMINAR #WHAT"
+          data-description="16-17 Nov 2024 di Villa Bukit Pinus, Bogor. Biaya normal 600rb, setelah subsidi: dewasa 400rb, pelajar: 350rb. Dihimbau bagi yang mampu silahkan membayar full price."
+        >
           <img src="img/news3.png" alt="" />
         </div>
 
-        <div class="news" id="first-img">
-            <img src="img/news1.png" alt="" />
-          </div>
+        <div
+          class="news"
+          data-title="TITLE 1"
+          data-description="Description for news 1 goes here."
+        >
+          <img src="img/news1.png" alt="" />
+        </div>
+
+        <div
+          class="news"
+          data-title="TITLE 2"
+          data-description="Description for news 2 goes here."
+        >
+          <img src="img/news2.png" alt="" />
+        </div>
+
+        <div
+          class="news"
+          data-title="TITLE 3"
+          data-description="Description for news 3 goes here."
+        >
+          <img src="img/news3.png" alt="" />
+        </div>
+
+        <div
+          class="news"
+          data-title="TITLE 4"
+          data-description="Description for news 4 goes here."
+        >
+          <img src="img/news1.png" alt="" />
+        </div>
       </div>
 
-      <!-- Pref and next button -->
-
-      <!-- Information  -->
       <div class="information">
-        <h2>TEAM BUILDING, GATHERING PELAYAN, MAP, DAN SEMINAR #WHAT</h2>
-
-        <p>
+        <h2 id="news-title">
+          TEAM BUILDING, GATHERING PELAYAN, MAP, DAN SEMINAR #WHAT
+        </h2>
+        <p id="news-description">
           16-17 Nov 2024 di Villa Bukit Pinus, Bogor. Biaya normal 600rb,
           setelah subsidi: dewasa 400rb, pelajar: 350rb. Dihimbau bagi yang
           mampu silahkan membayar full price.
         </p>
       </div>
     </div>
+
+    <script>
+      let currentIndex = 0;
+
+      const newsItems = document.querySelectorAll(".news");
+      const newsTitle = document.getElementById("news-title");
+      const newsDescription = document.getElementById("news-description");
+
+      function changeNews(direction) {
+        // Hide current news
+        newsItems[currentIndex].classList.remove("active");
+
+        // Calculate new index
+        currentIndex += direction;
+
+        // Wrap around the news items
+        if (currentIndex < 0) {
+          currentIndex = newsItems.length - 1; // Go to the last item
+        } else if (currentIndex >= newsItems.length) {
+          currentIndex = 0; // Go to the first item
+        }
+
+        // Show new news
+        newsItems[currentIndex].classList.add("active");
+
+        // Update the title and description
+        const activeNews = newsItems[currentIndex];
+        newsTitle.textContent = activeNews.getAttribute("data-title");
+        newsDescription.textContent =
+          activeNews.getAttribute("data-description");
+      }
+
+      // Initialize the first news item
+      changeNews(0);
+    </script>
   </body>
 </html>
