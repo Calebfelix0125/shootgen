@@ -1,0 +1,117 @@
+body {
+    background-color: black;
+    background-repeat: no-repeat;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    margin: 0.5vw;
+    background-color: transparent;
+}
+
+.navbar-menu {
+    color: white;
+    text-decoration: none;
+    margin: 4vh;
+    text-align: center;
+}
+
+.navbar-menu:hover {
+    color: #b194d7;
+}
+
+.navbar-menu.selected {
+    color: #b194d7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.navbar {
+    background-color: #1a1a1a;
+    padding: 15px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar a.active {
+    color: #a46eff;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding-bottom: 20%;
+}
+
+.logo {
+    font-size: 48px;
+    letter-spacing: 5px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.profile-card {
+    background-color: #743dd3;
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%;
+}
+
+.edit-btn {
+    background-color: #fff;
+    color: #a46eff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.logout-btn {
+    background-color: #000000;
+    color:#a46eff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.logout-btn:hover {
+    color: #fff;
+}
