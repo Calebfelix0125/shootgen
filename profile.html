@@ -13,51 +13,82 @@
 
 </head>
 <body>
-
-    <div id="home">
+  <input type="checkbox" id="check" />
         <div id = "navbar">
             <a class="navbar-menu" href="dashboard.html">HOME</a>
             <a class="navbar-menu" href="news.html">NEWS</a>
             <a class="navbar-menu" href="about-us.html">ABOUT US</a>
             <a class="navbar-menu" href="team.html">TEAM</a>
             <a class="navbar-menu selected" href="profile.html">PROFILE</a>
+            <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
         </div>
+        <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
 
-            <div class="profile-container">
+        <div class="profile-container">
             <h1 class="logo">SHOOTGEN</h1>
 
             <div class="profile-info-nama">
-                <div class="nama">
-                <p>Full Name :</p>
-                <button class="edit-btn1" onclick="editField('nama')">Edit</button>
+              <div class="nama">
+                <p>Nama :</p>
                 <h1 id="nama">Felix Nathanael</h1>
+                <!-- <button class="edit-btn1" onclick="editField('nama')">Edit</button> -->
+              </div>
             </div>
-            </div>
-            <div class="profile-info-dob-info-ministry">
-                <div class="dob">
+
+            <div class="profile-info-nama-sq">
+              <!-- <div class="nama">
+              <p>Full Name :</p>
+              <button class="edit-btn1" onclick="editField('nama')">Edit</button>
+              <h1 id="nama">Felix Nathanael</h1>
+              </div> -->
+              <div class="dob">
                 <p>DOB :</p>
                 <button class="edit-btn2" onclick="editField('dob')">Edit</button>
                 <h1 id="dob">10/09/2005</h1>
-            </div>
+              </div>
+
+              <div class="dob">
+                <p>DOB :</p>
+                <button class="edit-btn2" onclick="editField('dob')">Edit</button>
+                <h1 id="dob">10/09/2005</h1>
+              </div>
+
+              </div>
+          
+
+            <!-- <div class="profile-info-dob-info-ministry">
+                <div class="dob">
+                  <p>DOB :</p>
+                  <button class="edit-btn2" onclick="editField('dob')">Edit</button>
+                  <h1 id="dob">10/09/2005</h1>
+                </div>
                 
-            <div class="ministry">
-                <p>Ministry :</p>
-                <button class="edit-btn2" onclick="editField('ministry')">Edit</button>
-                <h1 id="ministry">Usher</h1>
-            </div>
-            </div>
-            <div class="profile-info-email">
-                <div class="email">
+                <div class="ministry">
+                  <p>Ministry :</p>
+                  <button class="edit-btn2" onclick="editField('ministry')">Edit</button>
+                  <h1 id="ministry">Usher</h1>
+                </div>
+            </div> -->
+
+            <!-- <div class="profile-info-email">
+              <div class="email">
+              <p>Email :</p>
+              <button class="edit-btn1" onclick="editField('email')">Edit</button>
+              <h1 id="email">admin@example.com</h1>
+            </div> -->
+           
+            <div class="profile-info-nama">
+                <div class="nama">
                 <p>Email :</p>
-                <button class="edit-btn1" onclick="editField('email')">Edit</button>
+                <!-- <button class="edit-btn1" onclick="editField('email')">Edit</button> -->
                 <h1 id="email">admin@example.com</h1>
+              </div>
             </div>
-            </div>
-        </div>
+          </div>
+
         <div class="container">
             <button class="logout-btn">Log Out</button>
         </div>
-    </div>
 
 </body>
 </html>
