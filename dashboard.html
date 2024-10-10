@@ -20,7 +20,7 @@
       <a class="navbar-menu" href="news.html">NEWS</a>
       <a class="navbar-menu" href="about-us.html">ABOUT US</a>
       <a class="navbar-menu" href="team.html">TEAM</a>
-      <a class="navbar-menu" href="profiile.html">PROFILE</a>
+      <a class="navbar-menu" href="profile.html">PROFILE</a>
     </div>
   </head>
   <body>
@@ -31,101 +31,67 @@
       </div>
       <div class="home-upper-right">
         <h1 class="to-do-list-font">TO DO LIST</h1>
-        <img width="97%" height="65%" src="img/to-do-list.png" alt="" />
-        <li>
+        <img width="97%" height="55%" src="img/to-do-list.png" alt="" />
+        <!-- <li>
           <a class="view-list-to-do-list" href="">View List</a>
-          <a class="add-new-to-do-list" href="">Add New</a>
-        </li>
+          <button onclick="form(this)" class="add-new-to-do-list">Add New</button>
+        </li> -->
+        <form class="todo-form">
+          <input type="text" class="todo-input" placeholder="Enter your task here" required>
+          <button type="submit" class="add-btn">Add List</button>
+        </form>
       </div>
+
       <div class="home-lower-p">
+        
+        <a href="">
         <div class="curhat-kana-display">
-          <a class="curhat-kana-daftar-dong-font" href="">CURHAT DONG</a>
-          <img
+          <div class="curhat-kana-daftar-dong-font" href="">CURHAT DONG</div>
+          <!-- <img
             width="130%"
             height="50%"
             src="img/curhat-dong-icon.png"
             alt=""
-          />
+          /> -->
         </div>
-        <div class="curhat-kana-display">
-          <a class="curhat-kana-daftar-dong-font" href="">KANA DONG</a>
-          <img
+        </a>
+
+        <a href="kana-dong.html">
+          <div class="curhat-kana-display">
+          
+            <div class="curhat-kana-daftar-dong-font">KANA DONG</div>
+            <!-- <img
             class="kana-img-display"
             width="100%"
             src="img/people.png"
             alt=""
-          />
-        </div>
+            /> -->
+          </div>
+        </a>
+      
+        <a href="">
         <div class="curhat-kana-display">
-          <a class="curhat-kana-daftar-dong-font" href="">DAFTAR DONG</a>
-          <img
+          <div class="curhat-kana-daftar-dong-font" href="">DAFTAR DONG</div>
+          <!-- <img
             class="daftar-img-display"
             width="70%"
             src="img/add-user.png"
             alt=""
-          />
+          /> -->
         </div>
+        </a>
       </div>
+
       <div class="home-lower">
-        <h1 class="nyatet-dong-font">NYATET DONG</h1>
+        <h1 class="nyatet-dong-font">VERSE OF THE WEEK</h1>
+        <h4 class="ayat"> Karena begitu besar kasih Allah akan dunia ini, sehingga Ia telah mengaruniakan Anak-Nya yang tunggal, supaya setiap orang yang percaya kepada-Nya tidak binasa, melainkan beroleh hidup yang kekal.</h4>
+        <p class="nama-ayat">Yohanes 3:16</p>
         <img src="img/nyatet-dong.png" width="100%" height="65%" alt="" />
-        <li>
+        <!-- <li>
           <a class="view-list-nyatet-dong" href="">View List</a>
           <a class="add-new-nyatet-dong" href="">Add New</a>
-        </li>
+        </li> -->
       </div>
     </div>
-
-    <!-- <div id="home">
-
-        <div id="navbar">
-
-            <a class="navbar selected" href="#">HOME</a>
-            <a class="navbar" href="news.html">NEWS</a>
-            <a class="navbar" href="#about-us">ABOUT US</a>
-            <a class="navbar" href="#team">TEAM</a>
-            <a class="navbar" href="#profile">PROFILE</a>
-
-        </div>
-
-        <div class="home-center">
-
-            <p class="display-shalom">Shalom,<div class="display-name">FELIX</div></p>
-
-                <div class="news-display">
-                    <img class="news-img" src="img/news1.png" alt="">
-                    <img class="news-img" src="img/news2.png" alt="">
-                </div>
-            <div class="curhat-dong-display">
-                <a class="curhat-kana-daftar-dong-font" href="">CURHAT DONG</a>
-                <img class="bubble-chat-display" width="180%" src="img/curhat-dong-icon.png" alt="">
-                <img class="shadow-display" width="100%" src="img/shadow button.png" alt="">
-            </div>
-            <div class="kana-dong-display">
-                <a class="curhat-kana-daftar-dong-font" href="">KANA DONG</a>
-                <img class="kana-img-display" width="100%" src="img/people.png" alt="">
-                <img class="shadow-display" width="100%" src="img/shadow button.png" alt="">
-            </div>
-            <div class="daftar-dong-display">
-                <a class="curhat-kana-daftar-dong-font" href="">DAFTAR DONG</a>
-                <img class="daftar-img-display" width="68%" src="img/add-user.png" alt="">
-                <img class="shadow-display" width="100%" src="img/shadow button.png" alt="">
-            </div>
-            <div class="to-do-list-display">
-                <img class="to-do-list-img-display" width="97%" src="img/to-do-list.png" alt="">
-                <h1 class="to-do-list-font">TO DO LIST</h1>
-                <a class="view-list-font" href="">View List</a>
-                <a class="add-new-font" href="">Add New</a>
-            </div>
-            <div class="nyatet-dong-display">
-                <img img class="nyatet-dong-img-display" src="img/nyatet-dong.png" width="100%" alt="">
-                <h1 class="nyatet-dong-font">NYATET DONG</h1>
-                <a class="view-list-font-nyatet-dong" href="">View List</a>
-                <a class="add-new-font-nyatet-dong" href="">Add New</a>
-            </div>
-        </div>
-    </div>
-
-     -->
   </body>
 </html>
