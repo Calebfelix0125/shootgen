@@ -10,26 +10,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="team.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div id="home">
-        <div id="navbar">
-            <a class="navbar-menu" href="dashboard.html">HOME</a>
-            <a class="navbar-menu" href="news.html">NEWS</a>
-            <a class="navbar-menu" href="about-us.html">ABOUT US</a>
-            <a class="navbar-menu selected" href="team.html">TEAM</a>
-            <a class="navbar-menu" href="profile.html">PROFILE</a>
-        </div>
+      <input type="checkbox" id="check" />
+      <div id="navbar">
+        <a class="navbar-menu" href="dashboard.html">HOME</a>
+        <a class="navbar-menu selected" href="news.html">NEWS</a>
+        <a class="navbar-menu" href="about-us.html">ABOUT US</a>
+        <a class="navbar-menu" href="team.html">TEAM</a>
+        <a class="navbar-menu" href="profile.html">PROFILE</a>
+        <label for="check" class="close-menu"
+          ><i class="fas fa-times"></i
+        ></label>
+      </div>
+      <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
 
-        <!-- Updated Search Bar -->
-        <div class="search-bar">
-            <input type="text" id="team-search" placeholder="Search for team members...">
-        </div>
+      <!-- Updated Search Bar -->
+      <div class="search-bar">
+        <input
+          type="text"
+          id="team-search"
+          placeholder="Search for team members..."
+        />
+      </div>
 
-        <div class="team-container"></div>
-        
-        <div class="carousel-arrow left">&#10094;</div>
-        <div class="carousel-arrow right">&#10095;</div>
+      <div class="team-container"></div>
+
+      <div class="carousel-arrow left">&#10094;</div>
+      <div class="carousel-arrow right">&#10095;</div>
     </div>
-</body>
+  </body>
 </html>

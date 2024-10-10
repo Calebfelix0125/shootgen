@@ -1,37 +1,19 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NEWS</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="css/news-style.css" />
+    <title>DAFTAR DONG</title>
+    <link rel="stylesheet" href="css/daftar-dong-style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <script src="script.js"></script>
   </head>
   <body>
-    <input type="checkbox" id="check" />
-    <div id="navbar">
-      <a class="navbar-menu" href="dashboard.html">HOME</a>
-      <a class="navbar-menu selected" href="news.html">NEWS</a>
-      <a class="navbar-menu" href="about-us.html">ABOUT US</a>
-      <a class="navbar-menu" href="team.html">TEAM</a>
-      <a class="navbar-menu" href="profile.html">PROFILE</a>
-      <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
-    </div>
-    <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
-
+    <a class="back-font" href="dashboard.html">Back</a>
     <div class="container">
       <span class="prev" onclick="changeNews(-1)">&#10094;</span>
       <span class="next" onclick="changeNews(1)">&#10095;</span>
@@ -87,9 +69,9 @@
           setelah subsidi: dewasa 400rb, pelajar: 350rb. Dihimbau bagi yang
           mampu silahkan membayar full price.
         </p>
+        <button type="submit" class="add-btn">Add List</button>
       </div>
     </div>
-
     <script>
       let currentIndex = 0;
 

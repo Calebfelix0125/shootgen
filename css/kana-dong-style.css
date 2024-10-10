@@ -1,0 +1,155 @@
+/* Default styles for larger screens */
+body {
+  background-color: black;
+  background-repeat: no-repeat;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  overflow-x: hidden;
+  background-image: url("/img/bg.png");
+  background-size: cover;
+}
+
+.back-font {
+  float: left;
+  color: white;
+  font-size: x-large;
+  margin: 3vh;
+  text-decoration: none;
+}
+
+.container {
+  float: right;
+  width: 60vw;
+  height: 70vh;
+  margin: 5vh;
+  margin-top: 5vh;
+}
+
+.header {
+  margin: 3vh;
+  color: white;
+  text-align: center; /* Pusatkan header */
+}
+
+.subheader {
+  margin: 3vh;
+  color: white;
+  font-style: italic;
+  text-align: center; /* Pusatkan subheader */
+}
+
+.display {
+  display: flex;
+  flex-wrap: wrap;
+  width: 57vw;
+  height: 25vw;
+  margin-left: 0 auto;
+}
+
+.display-box {
+  flex: 1;
+  background-image: linear-gradient(black, #9f58ed 80%);
+  margin: 3vh;
+  border-radius: 15px;
+  cursor: pointer;
+  display: flex; /* Flexbox untuk menata konten di dalam */
+  flex-direction: column; /* Konten disusun secara kolom */
+  justify-content: center; /* Pusatkan secara vertikal */
+  align-items: center; /* Pusatkan secara horizontal */
+  height: 30vh; /* Tinggi tetap agar tampilan konsisten */
+  position: relative; /* Membuat posisi relatif untuk teks di dalam */
+  padding: 1vh; /* Memberi padding di dalam display-box */
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.kana-font {
+  text-align: center; /* Pusatkan teks */
+  font-size: larger;
+  margin: 1vh 0; /* Jarak atas dan bawah */
+}
+
+.pemanah-font {
+  text-align: center; /* Pusatkan teks */
+  font-size: xx-large;
+  font-weight: bold;
+  margin: 1vh 0; /* Jarak atas dan bawah */
+}
+
+#abi:hover #gabriel-text,
+#mia:hover #mia-text,
+#mesakh:hover #mesakh-text,
+#felix:hover #felix-text {
+  display: block;
+  color: white;
+}
+
+#gabriel-text,
+#mia-text,
+#mesakh-text,
+#felix-text {
+  position: absolute; /* Pastikan teks tampil di atas */
+  display: none; /* Teks disembunyikan secara default */
+  text-align: center; /* Pusatkan teks */
+  font-size: medium;
+  bottom: 10%; /* Letakkan teks dekat bagian bawah */
+}
+
+/* Styles for mobile screens (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+  body {
+    background-image: none; /* Hapus background image untuk tampilan mobile */
+  }
+
+  .container {
+    width: 100vw;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+
+  .header {
+    text-align: center;
+    font-size: 28px;
+    margin-top: 80px; /* Tambahkan margin untuk jarak dari atas */
+  }
+
+  .subheader {
+    text-align: center; /* Pusatkan subheader pada mobile */
+    font-size: 18px;
+    margin: 3vh;
+  }
+
+  .display {
+    display: grid;
+    grid-template-columns: 1fr; /* Setiap display-box mengisi satu baris */
+    gap: 2vh;
+    width: 90vw;
+    margin: 3vh auto; /* Pusatkan display */
+  }
+
+  .display-box {
+    width: 100%;
+    height: 40vw; /* Tinggi relatif pada layar kecil */
+    margin: 0 auto; /* Agar setiap display-box berada di tengah */
+    padding: 5vh 0; /* Jarak atas dan bawah di dalam box */
+  }
+
+  .kana-font,
+  .pemanah-font {
+    font-size: 40px;
+    text-align: center; /* Pusatkan teks */
+  }
+
+  #gabriel-text,
+  #mia-text,
+  #mesakh-text,
+  #felix-text {
+    font-size: smaller;
+    margin-top: 20%;
+    text-align: center; /* Pusatkan teks */
+  }
+}

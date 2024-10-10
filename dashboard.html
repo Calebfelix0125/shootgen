@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HOME</title>
-    <!-- <link rel="stylesheet" href="css/dashboard-style.css" /> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -23,7 +22,8 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
     <script src="script.js"></script>
-
+  </head>
+  <body>
     <input type="checkbox" id="check" />
     <div id="navbar">
       <a class="navbar-menu selected" href="dashboard.html">HOME</a>
@@ -34,8 +34,6 @@
       <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
     </div>
     <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
-  </head>
-  <body>
     <div class="home-container">
       <!-- Home upper left (1st row) -->
       <div class="home-upper-left">
@@ -46,52 +44,68 @@
       <!-- Home upper right (2nd row) -->
       <div class="home-upper-right">
         <h1 class="to-do-list-font">TO DO LIST</h1>
-        <img width="97%" height="65%" src="img/to-do-list.png" alt="" />
-        <li>
+        <img width="97%" height="55%" src="img/to-do-list.png" alt="" />
+        <!-- <li>
           <a class="view-list-to-do-list" href="">View List</a>
-          <a class="add-new-to-do-list" href="">Add New</a>
-        </li>
+          <button onclick="form(this)" class="add-new-to-do-list">Add New</button>
+        </li> -->
+        <form class="todo-form">
+          <input type="text" class="todo-input" placeholder="Enter your task here" required>
+          <button type="submit" class="add-btn">Add List</button>
+        </form>
       </div>
 
       <!-- Curhat Kana (3rd row) -->
       <div class="home-lower-p">
+        
+        <a href="curhat-dong.html">
         <div class="curhat-kana-display">
-          <a class="curhat-kana-daftar-dong-font" href="">CURHAT DONG</a>
-          <img
+          <div class="curhat-kana-daftar-dong-font" href="">CURHAT DONG</div>
+          <!-- <img
             width="130%"
             height="50%"
             src="img/curhat-dong-icon.png"
             alt=""
-          />
+          /> -->
         </div>
-        <div class="curhat-kana-display">
-          <a class="curhat-kana-daftar-dong-font" href="">KANA DONG</a>
-          <img
+        </a>
+
+        <a href="kana-dong.html">
+          <div class="curhat-kana-display">
+          
+            <div class="curhat-kana-daftar-dong-font">KANA DONG</div>
+            <!-- <img
             class="kana-img-display"
             width="100%"
             src="img/people.png"
             alt=""
-          />
-        </div>
+            /> -->
+          </div>
+        </a>
+      
+        <a href="daftar-dong.html">
         <div class="curhat-kana-display">
-          <a class="curhat-kana-daftar-dong-font" href="">DAFTAR DONG</a>
-          <img
+          <div class="curhat-kana-daftar-dong-font" href="">DAFTAR DONG</div>
+          <!-- <img
             class="daftar-img-display"
             width="70%"
             src="img/add-user.png"
             alt=""
-          />
+          /> -->
         </div>
+        </a>
       </div>
 
       <!-- Nyatet Dong (4th row) -->
       <div class="home-lower">
-        <h1 class="nyatet-dong-font">NYATET DONG</h1>
+        <h1 class="nyatet-dong-font">VERSE OF THE WEEK</h1>
+        <h4 class="ayat"> Karena begitu besar kasih Allah akan dunia ini, sehingga Ia telah mengaruniakan Anak-Nya yang tunggal, supaya setiap orang yang percaya kepada-Nya tidak binasa, melainkan beroleh hidup yang kekal.</h4>
+        <p class="nama-ayat">Yohanes 3:16</p>
         <img src="img/nyatet-dong.png" width="100%" height="65%" alt="" />
-        <li>
+        <!-- <li>
           <a class="view-list-nyatet-dong" href="">View List</a>
           <a class="add-new-nyatet-dong" href="">Add New</a>
-        </li>
+        </li> -->
       </div>
     </div>
   </body>
